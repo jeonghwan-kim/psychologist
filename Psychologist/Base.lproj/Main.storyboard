@@ -112,12 +112,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1382" y="457"/>
+            <point key="canvasLocation" x="1380" y="337"/>
         </scene>
-        <!--Happiness View Controller-->
+        <!--Text View Controller-->
+        <scene sceneID="hmm-rI-hJu">
+            <objects>
+                <viewController id="OTr-vk-qxn" customClass="TextViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h6C-tU-Lfo"/>
+                        <viewControllerLayoutGuide type="bottom" id="wwH-yt-62g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jPS-fg-YX5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nKN-Tf-Zw5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nKN-Tf-Zw5" firstAttribute="leading" secondItem="jPS-fg-YX5" secondAttribute="leadingMargin" id="1bS-DU-Gkl"/>
+                            <constraint firstItem="nKN-Tf-Zw5" firstAttribute="bottom" secondItem="wwH-yt-62g" secondAttribute="top" id="2mZ-Jy-CY5"/>
+                            <constraint firstAttribute="bottom" secondItem="nKN-Tf-Zw5" secondAttribute="bottom" constant="20" symbolic="YES" id="Dxz-3b-ZyH"/>
+                            <constraint firstAttribute="trailing" secondItem="nKN-Tf-Zw5" secondAttribute="trailing" id="SEx-of-KBc"/>
+                            <constraint firstItem="nKN-Tf-Zw5" firstAttribute="top" secondItem="jPS-fg-YX5" secondAttribute="top" id="TZn-Fi-d3d"/>
+                            <constraint firstItem="nKN-Tf-Zw5" firstAttribute="leading" secondItem="jPS-fg-YX5" secondAttribute="leading" id="Wly-5w-Ycb"/>
+                            <constraint firstItem="nKN-Tf-Zw5" firstAttribute="top" secondItem="h6C-tU-Lfo" secondAttribute="bottom" constant="8" symbolic="YES" id="iMr-eI-1Cm"/>
+                            <constraint firstItem="nKN-Tf-Zw5" firstAttribute="trailing" secondItem="jPS-fg-YX5" secondAttribute="trailingMargin" id="n1V-8J-aFc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1bS-DU-Gkl"/>
+                                <exclude reference="Dxz-3b-ZyH"/>
+                                <exclude reference="iMr-eI-1Cm"/>
+                                <exclude reference="n1V-8J-aFc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="nKN-Tf-Zw5" id="XiR-ZG-8uM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXw-PB-jWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2331" y="1201"/>
+        </scene>
+        <!--Diagnosed Happiness View Controller-->
         <scene sceneID="g4Y-Wy-KlV">
             <objects>
-                <viewController id="Fyb-n5-usP" customClass="HappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fyb-n5-usP" customClass="DiagnosedHappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sCw-WT-eXD"/>
                         <viewControllerLayoutGuide type="bottom" id="yCp-nk-i9t"/>
@@ -143,7 +191,15 @@
                             <constraint firstItem="Fmv-dU-tih" firstAttribute="leading" secondItem="flg-9w-Ouj" secondAttribute="leading" id="zj8-mo-BDZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mld-c4-1Ay"/>
+                    <navigationItem key="navigationItem" id="mld-c4-1Ay">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="ldP-BS-xK5">
+                            <connections>
+                                <segue destination="OTr-vk-qxn" kind="popoverPresentation" identifier="Show Diagnostic History" popoverAnchorBarButtonItem="ldP-BS-xK5" id="U85-bM-igF">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="faceview" destination="Fmv-dU-tih" id="N4Q-HS-SSa"/>
                     </connections>
@@ -155,7 +211,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1725" y="1259"/>
+            <point key="canvasLocation" x="1593" y="1259"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="bx3-VO-WE7">

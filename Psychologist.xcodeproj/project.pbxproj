@@ -16,6 +16,8 @@
 		8338140F1C9792A7000332B3 /* PsychologistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338140E1C9792A7000332B3 /* PsychologistUITests.swift */; };
 		8338141E1C9794EB000332B3 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338141C1C9794EB000332B3 /* HappinessViewController.swift */; };
 		8338141F1C9794EB000332B3 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338141D1C9794EB000332B3 /* FaceView.swift */; };
+		8375DB101C985BDD00F3DF25 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8375DB0F1C985BDD00F3DF25 /* TextViewController.swift */; };
+		8375DB121C985DCA00F3DF25 /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8375DB111C985DCA00F3DF25 /* DiagnosedHappinessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		833814101C9792A7000332B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8338141C1C9794EB000332B3 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 		8338141D1C9794EB000332B3 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		8375DB0F1C985BDD00F3DF25 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewController.swift; path = ../TextViewController.swift; sourceTree = "<group>"; };
+		8375DB111C985DCA00F3DF25 /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagnosedHappinessViewController.swift; path = ../DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				8338141C1C9794EB000332B3 /* HappinessViewController.swift */,
+				8375DB111C985DCA00F3DF25 /* DiagnosedHappinessViewController.swift */,
+				833813F01C9792A7000332B3 /* PsychologistViewController.swift */,
+				8375DB0F1C985BDD00F3DF25 /* TextViewController.swift */,
 				8338141D1C9794EB000332B3 /* FaceView.swift */,
 				833813EE1C9792A7000332B3 /* AppDelegate.swift */,
-				833813F01C9792A7000332B3 /* PsychologistViewController.swift */,
 				833813F21C9792A7000332B3 /* Main.storyboard */,
 				833813F51C9792A7000332B3 /* Assets.xcassets */,
 				833813F71C9792A7000332B3 /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8375DB101C985BDD00F3DF25 /* TextViewController.swift in Sources */,
 				833813F11C9792A7000332B3 /* PsychologistViewController.swift in Sources */,
 				8338141E1C9794EB000332B3 /* HappinessViewController.swift in Sources */,
+				8375DB121C985DCA00F3DF25 /* DiagnosedHappinessViewController.swift in Sources */,
 				833813EF1C9792A7000332B3 /* AppDelegate.swift in Sources */,
 				8338141F1C9794EB000332B3 /* FaceView.swift in Sources */,
 			);
@@ -492,6 +500,7 @@
 				833814151C9792A7000332B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		833814161C9792A7000332B3 /* Build configuration list for PBXNativeTarget "PsychologistTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				833814181C9792A7000332B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		833814191C9792A7000332B3 /* Build configuration list for PBXNativeTarget "PsychologistUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +518,7 @@
 				8338141B1C9792A7000332B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
